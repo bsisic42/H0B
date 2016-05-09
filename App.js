@@ -6,7 +6,8 @@ export default class App extends React.Component {
     constructor() {
         super();
         this.state = {name: "Martin", age: "35"};
-        this.update = this.update.bind(this);
+        this.updateName = this.updateName.bind(this);
+        this.updateAge = this.updateAge.bind(this);
         this.reset = this.reset.bind(this);
     }
 
@@ -14,8 +15,11 @@ export default class App extends React.Component {
         this.setState({name: "", age: ""});
     }
 
-    update(e) {
-        this.setState({name: e.target.value, age: e.target.value });
+    updateName(e) {
+        this.setState({ name: e.target.value });
+    }
+    updateAge(e) {
+      this.setState({ age: e.target.value });
     }
 
     render() {
@@ -38,13 +42,13 @@ export default class App extends React.Component {
 
               <div className="input-card">
                 <Textfield
-                       onChange={this.update}
+                       onChange={this.updateName}
                        value={this.state.name}
                        label="Prénom..."
                        style={{width: '200px'}} />
 
                        <Textfield
-                              onChange={this.update}
+                              onChange={this.updateAge}
                               value={this.state.age}
                               label="Âge..."
                               style={{width: '200px'}} />
