@@ -1,0 +1,13 @@
+.mdl-layout__header {
+  background-color: #222!important;
+}
+
+h3 span {
+  color: #fead0d;
+}
+
+.input-card {
+  text-align: center;
+  position: relative;
+  margin-top: 2vh;
+}
