@@ -6,8 +6,27 @@ h3 span {
   color: #fead0d;
 }
 
+h4 span {
+  color: #fead0d;
+}
+
 .input-card {
   text-align: center;
   position: relative;
   margin-top: 2vh;
+}
+
+.mail-input {
+  text-align: center!important;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+
+.mdl-button--raised.mdl-button--colored {
+  background: #222!important;
+  color: #fead0d!important;
+}
+
+.mdl-textfield__label:after {
+  background-color: #fead0d!important;
 }
