@@ -2,7 +2,7 @@ var MailjetClient = require ('node-mailjet');
 
 module.exports = function ( recipients, name, som, callback ) {
   console.log(recipients, name, som);
-  var mailjet = MailjetClient.connect('779f34a84d34b309d3fc51897a1fce45', 'd63c0dc349ebbe79826fb85e998ec730');
+  var mailjet = MailjetClient.connect('keypub', 'keypriv');
 
   var send = mailjet.post('send');
   send
