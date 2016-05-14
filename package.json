@@ -1,12 +1,12 @@
 {
-  "name": "simplebuild",
+  "name": "mjApp",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server"
   },
-  "author": "",
+  "author": "bsisic",
   "license": "ISC",
   "dependencies": {
     "babel-core": "^6.8.0",

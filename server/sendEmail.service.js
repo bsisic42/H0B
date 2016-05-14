@@ -7,7 +7,7 @@ module.exports = function ( recipients, name, som, callback ) {
   var send = mailjet.post('send');
   send
     .request({
-        "FromEmail":"arnaud@mailjet.com",
+        "FromEmail":"gbadi@mailjet.com",
         "FromName":"John Doe",
         "Subject":"MjApp Test!",
         "Html-part": `<!doctype html>
