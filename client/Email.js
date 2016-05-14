@@ -21,8 +21,10 @@ export default class Email extends React.Component {
                       label="Email du destinataire..."
                       style={{width: '600px'}} />
 
-                    <button onClick={() => {this.props.onClick(this.state.val)}}>
-                          <Icon name="add" />
+                    <button
+                      className="btn-send"
+                      onClick={() => {this.props.onClick(this.state.val)}}>
+                          <Icon className="btn-icon" name="send" />
                       </button>
 
 

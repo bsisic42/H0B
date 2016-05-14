@@ -30,3 +30,11 @@ h4 span {
 .mdl-textfield__label:after {
   background-color: #fead0d!important;
 }
+
+.btn-send {
+  background-color: #222;
+}
+
+.btn-icon {
+  color: #fead0d;
+}

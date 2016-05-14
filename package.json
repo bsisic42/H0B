@@ -4,7 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server"
+    "start": "webpack-dev-server",
+    "install-modules": "npm i && cd ./server && npm i",
+    "run": "npm start --parallel cd ./server && node app.js",
+    "launch": "npm run-script install-modules && npm run-script run"
   },
   "author": "",
   "license": "ISC",
