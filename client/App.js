@@ -2,7 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { Layout, fixedHeader, Header, Textfield, Content, Card, CardText, shadow, CardTitle, Button } from 'react-mdl';
 import request from 'superagent';
+
 import Email from './Email';
+import Form from './Form';
+
+import AlertContainer from 'react-alert';
 
 export default class App extends React.Component {
     constructor() {
@@ -70,6 +74,7 @@ export default class App extends React.Component {
                 </Button>
               </div>
 
-            </div>);
+            </div>
+          )
     }
 }

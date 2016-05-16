@@ -1,8 +1,11 @@
 var MailjetClient = require ('node-mailjet');
 
+var apiKey = process.env.MJ_APIKEY_PUBLIC,
+    apiSecret = process.env.MJ_APIKEY_PRIVATE;
+
 module.exports = function ( recipients, name, som, callback ) {
   console.log(recipients, name, som);
-  var mailjet = MailjetClient.connect('keypub', 'keypriv');
+  var mailjet = MailjetClient.connect('apiKey', 'apiSecret');
 
   var send = mailjet.post('send');
   send
